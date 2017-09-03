@@ -1,0 +1,10 @@
+"use strict";
+var mensaje = "franco";
+var cualquiera;
+cualquiera = new Date();
+console.log(cualquiera + " " + mensaje);
+var nombre = "franco";
+var apellido = "sabino";
+var edad = 27;
+var stringliteral = "Hola, \n                                Soy " + nombre + " " + apellido + " \n                                y tengo " + edad + " a\u00F1os";
+console.log(stringliteral);
