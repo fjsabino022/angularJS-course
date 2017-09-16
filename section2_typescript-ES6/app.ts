@@ -1,3 +1,13 @@
+/*
+ECMAScript v6 (Abreviado como ES6 o ES2015) es el estándar que seguirá JavaScript a 
+partir de Junio de este año (2015). Hasta el momento la versión de JS que estamos usando en 
+nuestros navegadores y Node.js, es la v5.
+
+Agregados en el ECMAScript v6: http://www.arquitecturajava.com/introduccion-javascript-es6/
+https://carlosazaustre.es/ecmascript-6-el-nuevo-estandar-de-javascript/
+
+*/
+
 //··············································································
 //tipos de datos
 let mensaje: string = "franco";
