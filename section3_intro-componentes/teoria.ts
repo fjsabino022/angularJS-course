@@ -2,7 +2,7 @@
 //DIRECTIVAS ESTRUCTURALES: son expresiones que indican al HTML que acciones debe realizar.
   //ej: *ng-if , *ng-for, etc
 
-  
+
 //Elementos del proyecto ANGULAR2 generados por el ANGULAR/CLI
 /**
  * e2e: carpeta que contiene el proyecto para realizar pruebas unitarioas
@@ -47,9 +47,21 @@
  * typings.d.ts: archivo para definir variables globales de la aplicacion.
  *    Lo que defina aca dentro, son variables que son globales.
  * 
+ *  Para levantar el servidor de angular es:
+ *  ng serve -o      -> para abrir el navegador automaticamente
+ *  ng serve --open  -> para abrir el navegador automaticamente
  * 
- * 
- * 
+ *  ¿Como generar automaticamente un componente con angular/cli?
+ *  ng g c footer
+ *      ng -> comando de angular/cli
+ *      g -> generate
+ *      c -> componente
+ *      footer -> nombre de componente
+    *     create src/app/footer/footer.component.css (0 bytes)
+          create src/app/footer/footer.component.html (25 bytes)
+          create src/app/footer/footer.component.spec.ts (628 bytes)
+          create src/app/footer/footer.component.ts (269 bytes)
+          update src/app/app.module.ts (563 bytes) --> actualiza automaticamente el app.module.ts
  * 
  */
 
