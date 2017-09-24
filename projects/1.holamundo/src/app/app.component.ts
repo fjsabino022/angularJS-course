@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  apellido:string = "Sabino";
-  nombre:string = "Franco";
+  apellido: string = "Sabino";
+  nombre: string = "Franco";
 }
