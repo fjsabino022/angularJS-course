@@ -29,5 +29,16 @@
 
       es super importante que el script de bootstrap este despues del JQUERY ya que 
       depende de JQUERY
+
+
+
+
+
+   ng g c heroes -is  (con -IS hace que no te cree el archivo .css del componente) 
+  installing component
+  create src/app/components/heroes/heroes.component.html
+  create src/app/components/heroes/heroes.component.spec.ts
+  create src/app/components/heroes/heroes.component.ts
+  update src/app/app.module.ts
  * 
  */ 
