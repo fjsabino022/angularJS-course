@@ -40,5 +40,14 @@
   create src/app/components/heroes/heroes.component.spec.ts
   create src/app/components/heroes/heroes.component.ts
   update src/app/app.module.ts
- * 
+
+  /*Para generar automaticamnete con el snnipets la ruta
+      a-routes
+  */
+
+  /*
+  Para usar HASH EN LAS RUTAS SE DEBE USAR:
+  export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash:true});
+  Permite que la url sea: localhost:4200/#home/
+  * 
  */ 
