@@ -50,4 +50,14 @@
   export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash:true});
   Permite que la url sea: localhost:4200/#home/
   * 
- */ 
+
+  Variable private: solo son accesibles en el componente donde estan creadas.
+  
+  ngOnInit: es un metodo que se ejecuta una vez que la pagina esta renderizada, lista para trabajar.
+
+  En el constructor de un componente inicializamos el service que vamos a utilizar en ese componente.
+
+  Export: es una palabra clave que permite a las clases/interfaces poider ser vistas desde otros lugares de la aplicacion.
+ 
+  Pipes: trasnforman los datos en la vista. Solo es para la vista y no cambia nunca el valor
+  */ 
