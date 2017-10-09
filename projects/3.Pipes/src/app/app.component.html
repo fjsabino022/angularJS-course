@@ -17,11 +17,114 @@
         <td>{{ nombre | uppercase}}</td>
       </tr>
       <tr>
-          <td>{{nombre}}</td>
-          <td>lowercase</td>
-          <td>{{ nombre | lowercase}}</td>
-        </tr>
+        <td>{{nombre}}</td>
+        <td>lowercase</td>
+        <td>{{ nombre | lowercase}}</td>
+      </tr>
+      <tr>
+        <td>{{nombre}}</td>
+        <td>slice:3</td>
+        <td>{{ nombre | slice:3}}</td>
+      </tr>
+      <tr>
+        <td>{{nombre}}</td>
+        <td>slice:0:5</td>
+        <td>{{ nombre | slice:0:5}}</td>
+      </tr>
+      <tr>
+        <td>{{arreglo}}</td>
+        <td>slice:1:5</td>
+        <td>{{ arreglo | slice:1:5}}</td>
+      </tr>
+      <tr>
+        <td>{{PI}}</td>
+        <td>number:'3.0-0'</td>
+        <td>{{ PI | number:'3.0-0'}}</td>
+      </tr>
+      <tr>
+        <td>{{PI}}</td>
+        <td>number:'1.0-2'</td>
+        <td>{{ PI | number:'1.0-2'}}</td>
+      </tr>
+      <tr>
+        <td>{{a}}</td>
+        <td>percent</td>
+        <td>{{ a | percent}}</td>
+      </tr>
+      <tr>
+        <td>{{a}}</td>
+        <td>percent:'2.2-2'</td>
+        <td>{{ a | percent:'2.2-2'}}</td>
+      </tr>
+      <tr>
+        <td>{{salario}}</td>
+        <td>currency</td>
+        <td>{{ salario | currency}}</td>
+      </tr>
+      <tr>
+        <td>{{salario}}</td>
+        <td>currency:'ARS'</td>
+        <td>{{ salario | currency:'ARS'}}</td>
+      </tr>
+      <tr>
+        <td>{{salario}}</td>
+        <td>currency:'BRL':true</td>
+        <td>{{ salario | currency:'BRL':true}}</td>
+      </tr>
+      <tr>
+        <td>{{salario}}</td>
+        <td>currency:'EUR':true:'4.0-0'</td>
+        <td>{{ salario | currency:'EUR':true:'4.0-0'}}</td>
+      </tr>
+      <tr>
+        <td>{{salario}}</td>
+        <td>number:'.2-2'</td>
+        <td>{{ salario | number:'.2-2'}}</td>
+      </tr>
+      <tr>
+        <td>{{valorpromesa}}</td>
+        <td>async</td>
+        <td>{{ valorpromesa | async}}</td>
+      </tr>
+      <tr>
+        <td>{{persona.fecha_nacimiento}}</td>
+        <td>date</td>
+        <td>{{ persona.fecha_nacimiento | date}}</td>
+      </tr>
+      <tr>
+        <td>{{persona.fecha_nacimiento}}</td>
+        <td>date:'medium'</td>
+        <td>{{ persona.fecha_nacimiento | date:'medium'}}</td>
+      </tr>
+      <tr>
+        <td>{{persona.fecha_nacimiento}}</td>
+        <td>date:'dd/MM/yyyy</td>
+        <td>{{ persona.fecha_nacimiento | date:'dd/MM/yyyy'}}</td>
+      </tr>
+      <tr>
+        <td>{{persona.fecha_nacimiento}}</td>
+        <td>date:'MMMM - dd'</td>
+        <td>{{ persona.fecha_nacimiento | date:'MMMM - dd'}}</td>
+      </tr>
+      <tr>
+        <td>{{nombreraro}}</td>
+        <td> camelcase</td>
+        <td>{{ nombreraro | camelcase }}</td>
+      </tr>
+      <tr>
+        <td>{{nombreraro}}</td>
+        <td> camelcase:false</td>
+        <td>{{ nombreraro | camelcase:false }}</td>
+      </tr>
     </tbody>
   </table>
+
+  <h4>Slice en FOR</h4>
+  <ul>
+    <li *ngFor="let item of arreglo | slice:5:20">{{item}}</li>
+  </ul>
+
+  <h4>Pipe JSON </h4>
+  <pre>{{persona | json}}</pre>
 
 </div>

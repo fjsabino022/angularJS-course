@@ -60,4 +60,13 @@
   Export: es una palabra clave que permite a las clases/interfaces poider ser vistas desde otros lugares de la aplicacion.
  
   Pipes: trasnforman los datos en la vista. Solo es para la vista y no cambia nunca el valor
+ 
+  Asyn: es un pipe que permite mostrar informacion que viene de observables o promesas. Que son asyncronos.
+ 
+  Por ejemplo, para colocar internalizacion de argentina: 
+  import { LOCALE_ID } from '@angular/core';
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es-ar' }
+  ],
+  Para demas codigos de lenguajes consultar:https://www.science.co.il/language/Locale-codes.php
   */ 
