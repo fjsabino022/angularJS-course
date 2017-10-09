@@ -12,7 +12,8 @@ export class AppComponent {
   PI = Math.PI;
   a: number = 0.246;
   salario: number = 1234.5;
-
+  video = 'ocH-aauM_wU';
+  activar: boolean = true;
   persona = {
     nombre: 'Franco',
     edad: 27,

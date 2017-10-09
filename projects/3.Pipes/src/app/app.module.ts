@@ -3,11 +3,15 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CamelcasePipe } from './pipes/camelcase.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CamelcasePipe
+    CamelcasePipe,
+    DomseguroPipe,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule
