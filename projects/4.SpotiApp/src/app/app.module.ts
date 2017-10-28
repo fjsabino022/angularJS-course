@@ -14,13 +14,17 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 // Servicios
 import { SpotifyService } from './services/spotify-service.service';
+import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { ArtistaComponent } from './components/artista/artista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    SinfotoPipe,
+    ArtistaComponent
   ],
   imports: [
     BrowserModule,
