@@ -9,7 +9,7 @@ export class SpotifyService {
   urlbusqueda: string = 'https://api.spotify.com/v1/search';
   urlartista: string = 'https://api.spotify.com/v1/artists';
 
-  token: string = 'Bearer BQBdm4BOQ-7-KchcXWno8YM0J1bBSNunnjHLoto2YGs7XES9fyFtZrxKKbvIxzJIAV5t_t0P7oW0SAGbBoqWaw';
+  token: string = 'Bearer BQDMzhnce42ewgCFBYebkcFxkwNBzvtNpaQjnlvY92gPiTK9dG1uuA7Kh2OZR5KeYvmGE-gNOXpcqYE_1bF0NQ';
 
   constructor(private _http: Http) { }
 
@@ -23,13 +23,13 @@ export class SpotifyService {
     return this._http.get(url, {headers})
       .map(res => { // el map devuelve un observable
         this.artistas = res.json().artists.items;
-        console.log(this.artistas); // esto es solo para loguear el resultado nada mas
+        // console.log(this.artistas); // esto es solo para loguear el resultado nada mas
         return this.artistas; // esto es solo para loguear el resultado nada mas
     });
   }
 
   getArtista(id: string) {
-    let query: string = `/${id}/top-tracks?country=ES`;
+    let query: string = `/${id}`;
     let url: string = this.urlartista + query;
 
     let headers = new Headers();
@@ -43,7 +43,7 @@ export class SpotifyService {
   }
 
   getTop(id: string) {
-    let query: string = `/${id}`;
+    let query: string = `/${id}/top-tracks?country=ES`;
     let url: string = this.urlartista + query;
 
     let headers = new Headers();
@@ -51,7 +51,7 @@ export class SpotifyService {
 
     return this._http.get(url, {headers})
       .map(res => { // el map devuelve un observable
-        console.log(res.json().tracks);
+        // console.log(res.json().tracks);
         return res.json().tracks;
     });
   }
